@@ -32,7 +32,7 @@ namespace LetsDoLinq
                 new Person("Anders", 38,1),
                 new Person("Göran", 33,2),
                 new Person("Göran", 34,3),
-                new Person("Alfred", 36,3),
+             
 
 
             };
@@ -113,7 +113,7 @@ namespace LetsDoLinq
                 Console.WriteLine(item.CompanyName);
                 foreach (var employee in item.Employees)
                 {
-                    Console.WriteLine(employee.Age);
+                    Console.WriteLine(employee);
                 }
             }
 
