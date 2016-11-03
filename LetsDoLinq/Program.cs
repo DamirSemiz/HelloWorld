@@ -12,7 +12,7 @@ namespace LetsDoLinq
         static void Main(string[] args)
         {
 
-            //test
+      
 
             var workingPlaces = new List<WorkPlace>
             {
@@ -34,13 +34,14 @@ namespace LetsDoLinq
                 new Person("Göran", 34,3),
                 new Person("Alfred", 36,3),
 
+
             };
 
-
+            Console.WriteLine(hello world);
             //A alla över 30
 
 
-            var employeesOver30 = employees.Where(p => p.Age > 30);
+            var employeesOver30 = employees.Where(p => p.Age > 30 );
 
             Console.WriteLine("Det här är alla över 30år:");
             employeesOver30.Print();
@@ -112,7 +113,7 @@ namespace LetsDoLinq
                 Console.WriteLine(item.CompanyName);
                 foreach (var employee in item.Employees)
                 {
-                    Console.WriteLine(employee);
+                    Console.WriteLine(employee.Age);
                 }
             }
 
